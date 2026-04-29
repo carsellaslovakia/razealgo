@@ -1,4 +1,4 @@
-import mszProHero from "../assets/raze-algo-hero.png";
+import mszProHero from "../assets/hero-chart.jpg";
 import wavoraHero from "../assets/wavora-hero.png";
 import levelsHero from "../assets/levels-hero.png";
 
