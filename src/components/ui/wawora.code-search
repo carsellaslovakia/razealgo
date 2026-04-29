@@ -1,10 +1,19 @@
-# Query: wawora
+# Query: all indicators
 # ContextLines: 1
 
-2 results - 1 file
+3 results - 3 files
 
-src/data/indicators.ts:
-  42    {
-  43:     slug: "wavora-oscillator",
-  44:     name: "Wavora Oscillator",
-  45      tagline: "Free trend overlay",
+src/routes/index.tsx:
+  374                q: "Do I need TradingView?",
+  375:               a: "Yes. All indicators run on TradingView. A free TradingView account works.",
+  376              },
+
+src/routes/indicators.$slug.tsx:
+  72              >
+  73:               ← All indicators
+  74              </Link>
+
+src/routes/legal.$page.tsx:
+  8        "These Terms of Service govern your use of our website and indicators. By using our products you agree to these terms.",
+  9:       "All indicators are licensed for personal use. You may not redistribute, resell, decompile or share access to the scripts.",
+  10        "Subscriptions renew automatically until cancelled. Lifetime plans are one-time payments granting indefinite access to the chosen indicator and its updates.",

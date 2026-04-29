@@ -1,11 +1,22 @@
+import mszProHero from "../assets/raze-algo-hero.png";
+import wavoraHero from "../assets/wavora-hero.png";
+import levelsHero from "../assets/levels-hero.png";
+
 export type Indicator = {
   slug: string;
   name: string;
   tagline: string;
   description: string;
-  category: "Market Structure" | "Trend" | "Signals" | "Dashboard";
+  category:
+    | "Market Structure"
+    | "Trend"
+    | "Signals"
+    | "Dashboard"
+    | "Oscillator"
+    | "Support and Resistance";
   tier: "Free" | "Premium";
   features: string[];
+  image: string;
 };
 
 export const indicators: Indicator[] = [
@@ -29,33 +40,45 @@ export const indicators: Indicator[] = [
       "Built-in alert conditions",
       "Multiple color themes",
     ],
+    image: mszProHero,
   },
   {
     slug: "bias-cloud-pro",
     name: "Bias Cloud Pro",
     tagline: "Multi-timeframe directional bias",
-    description: "Visualize directional bias across multiple timeframes with an adaptive cloud overlay.",
+    description:
+      "Visualize directional bias across multiple timeframes with an adaptive cloud overlay.",
     category: "Trend",
     tier: "Premium",
-    features: ["Adaptive trend cloud", "MTF bias confirmation", "Custom palette", "Alert hooks"],
+    features: [
+      "Adaptive trend cloud",
+      "MTF bias confirmation",
+      "Custom palette",
+      "Alert hooks",
+    ],
+    image: mszProHero,
   },
   {
     slug: "wavora",
     name: "Wavora",
     tagline: "Wave momentum and divergence oscillator",
-    description: "Momentum wave-based oscillator signals and highlights potential bullish and bearish divergences.",
+    description:
+      "Momentum wave-based oscillator signals and highlights potential bullish and bearish divergences.",
     category: "Oscillator",
     tier: "Free",
     features: ["Momentum", "Divergence", "Alerts"],
+    image: wavoraHero,
   },
   {
     slug: "levels",
     name: "Levels",
     tagline: "MTF support and resistance",
-    description: "Automatically plots pivot-based support and resistance levels across multiple timeframes.",
+    description:
+      "Automatically plots pivot-based support and resistance levels across multiple timeframes.",
     category: "Support and Resistance",
     tier: "Free",
-    features: ["Pivot", "MTF", "Labels"],
+    features: ["Pivot", "Multi-time frame", "Labels"],
+    image: levelsHero,
   },
   {
     slug: "simple-bias-dashboard",
@@ -65,15 +88,18 @@ export const indicators: Indicator[] = [
     category: "Dashboard",
     tier: "Free",
     features: ["3 timeframes", "Compact view", "Minimal styling"],
+    image: mszProHero,
   },
   {
     slug: "candle-clarity-tool",
     name: "Candle Clarity Tool",
     tagline: "Clean candle overlay",
-    description: "Simplifies candle visuals so you can read price action with less noise.",
+    description:
+      "Simplifies candle visuals so you can read price action with less noise.",
     category: "Trend",
     tier: "Free",
     features: ["Clean overlay", "Color presets", "Hide noise"],
+    image: mszProHero,
   },
 ];
 

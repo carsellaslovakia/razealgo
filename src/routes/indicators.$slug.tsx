@@ -5,7 +5,6 @@ import { getIndicator } from "@/data/indicators";
 import { plans } from "@/data/plans";
 import { PricingCard } from "@/components/site/PricingCard";
 import { Check, ChevronRight, Sparkles } from "lucide-react";
-import heroChart from "@/assets/hero-chart.jpg";
 
 export const Route = createFileRoute("/indicators/$slug")({
   loader: ({ params }) => {
@@ -140,7 +139,7 @@ function ProductPage() {
             />
             <div className="relative overflow-hidden rounded-2xl glass-strong shadow-elevated">
               <img
-                src={heroChart}
+                src={indicator.image}
                 alt={`${indicator.name} chart preview`}
                 width={1920}
                 height={1080}
@@ -157,7 +156,7 @@ function ProductPage() {
             <h2 className="font-display text-2xl font-bold">Key features</h2>
 
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {indicator.features.map((f) => (
+              {indicator.features.map((f: string) => (
                 <li key={f} className="flex items-start gap-2 text-sm">
                   <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                   <span>{f}</span>
