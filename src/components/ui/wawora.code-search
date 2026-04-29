@@ -1,0 +1,10 @@
+# Query: wawora
+# ContextLines: 1
+
+2 results - 1 file
+
+src/data/indicators.ts:
+  42    {
+  43:     slug: "wavora-oscillator",
+  44:     name: "Wavora Oscillator",
+  45      tagline: "Free trend overlay",
