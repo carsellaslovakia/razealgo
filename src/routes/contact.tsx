@@ -100,17 +100,17 @@ function ContactPage() {
           <div className="rounded-2xl glass p-6">
             <Mail className="h-5 w-5 text-primary" />
             <h3 className="mt-3 font-semibold">Email</h3>
-            <p className="text-sm text-muted-foreground">support@yourtradinglab.com</p>
+            <p className="text-sm text-muted-foreground">support@razealgo.com</p>
           </div>
           <div className="rounded-2xl glass p-6">
             <Send className="h-5 w-5 text-primary" />
             <h3 className="mt-3 font-semibold">Telegram</h3>
-            <p className="text-sm text-muted-foreground">@yourtradinglab</p>
+            <p className="text-sm text-muted-foreground">https://t.me/razealego</p>
           </div>
           <div className="rounded-2xl glass p-6">
             <MessageCircle className="h-5 w-5 text-primary" />
             <h3 className="mt-3 font-semibold">Discord</h3>
-            <p className="text-sm text-muted-foreground">discord.gg/yourtradinglab</p>
+            <p className="text-sm text-muted-foreground"></p>
           </div>
         </aside>
       </div>
